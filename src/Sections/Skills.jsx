@@ -130,7 +130,7 @@ const Skills = () => {
                 <div className="flex-grow ml-4 h-px bg-gradient-to-r from-red-600/50 to-transparent"></div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-full">
                 {category.skills.map((skill, skillIndex) => (
                   <SkillCard
                     key={skillIndex}

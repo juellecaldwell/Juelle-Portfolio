@@ -56,6 +56,7 @@ const Hero = () => {
       },
     },
   }
+  
 
   // Fixed easing function - changed cubic-bezier to use valid values
   const itemVariants = {

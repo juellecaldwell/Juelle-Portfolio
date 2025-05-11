@@ -17,8 +17,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FaGithub, url: "#", label: "GitHub" },
-    { icon: FaLinkedin, url: "#", label: "LinkedIn" },
+    { icon: FaGithub, url: "https://github.com/juellecaldwell", label: "GitHub" },
+    { icon: FaLinkedin, url: "https://www.linkedin.com/in/juelle-caldwell-ba02972a3", label: "LinkedIn" },
     { icon: FaTwitter, url: "#", label: "Twitter" },
     { icon: FaInstagram, url: "#", label: "Instagram" },
     { icon: FaDribbble, url: "#", label: "Dribbble" },

@@ -10,7 +10,8 @@ import SolarView from "../Images/SolarView.png"
 import Spider from "../Images/Spider-man-Suit-Tracker.png"
 import TrophyTracker from "../Images/TrophyTracker.png"
 import InvenTrack from "../Images/InvenTrack.png"
-import InDevelopment from "../Images/InDevelopment.jpg" 
+import InDevelopment from "../Images/InDevelopment.jpg"
+import v1 from "../Images/Portfoliov1.png" 
 
 
 
@@ -65,6 +66,15 @@ const Projects = () => {
       category: "fullstack",
       github: "#",
       live: "https://youtu.be/urDgumc87IQ",
+    },
+    {
+      title: "Portfolio V1",
+      description: "This is my First ever Portfolio Made by Me and using similar code from an code along while altering it in my own style.",
+      image: v1,
+      tags: ["React js", "html", "tailwind css"],
+      category: "frontend",
+      github: "#",
+      live: "https://juelles-portfolio.vercel.app/",
     },
     {
       title: "(In Development 5/4/2025) Service Booking Platform",

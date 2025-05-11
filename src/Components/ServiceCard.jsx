@@ -2,28 +2,34 @@
 
 import { motion } from "framer-motion"
 
-const SectionTitle = ({ title, subtitle }) => {
+const ServiceCard = ({ service, index }) => {
+  const Icon = service.icon
+  
   return (
     <motion.div
-      className="text-center mb-12"
-      initial={{ opacity: 0, y: 20 }}
+      className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-xl border border-gray-800 hover:border-red-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-600/10 h-full flex flex-col"
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: false, amount: 0.5 }}
-      transition={{ duration: 0.6 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 relative inline-block">
-        {title}
-        <motion.span
-          className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400"
-          initial={{ width: 0 }}
-          whileInView={{ width: "100%" }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        ></motion.span>
-      </h2>
-      {subtitle && <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto">{subtitle}</p>}
+      <div className="bg-red-600/10 h-12 w-12 rounded-lg flex items-center justify-center mb-4">
+        <Icon className="text-red-500 text-xl" />
+      </div>
+      
+      <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+      <p className="text-gray-400 mb-6 flex-grow">{service.description}</p>
+      
+      <ul className="space-y-2">
+        {service.features.map((feature, i) => (
+          <li key={i} className="flex items-center text-gray-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-red-500 mr-2"></span>
+            {feature}
+          </li>
+        ))}
+      </ul>
     </motion.div>
   )
 }
 
-export default SectionTitle
+export default ServiceCard

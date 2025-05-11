@@ -16,54 +16,84 @@ const Freelance = () => {
       icon: FaCode,
       title: "Web Development",
       description:
-        "Custom websites built with the latest technologies to ensure fast loading, responsiveness, and optimal user experience.",
-      features: ["Responsive Design", "SEO Optimization", "Performance Tuning", "Cross-browser Compatibility"],
+        "Custom web apps using modern frameworks and tools to deliver clean, responsive, and user-focused experiences.",
+      features: [
+        "Responsive Design",
+        "API Integration",
+        "React & ASP.NET MVC",
+      ],
     },
     {
       icon: FaPalette,
       title: "UI/UX Design",
       description:
-        "User-centered design that focuses on creating intuitive, accessible, and visually appealing interfaces.",
-      features: ["Wireframing", "Prototyping", "User Testing", "Visual Design"],
+        "Modern, accessible, and interfaces with a strong focus on usability and mobile-first design.",
+      features: [
+        "Framer Motion Animations",
+        "Mobile-First Design",
+        "User-Friendly Layouts",
+      ],
     },
     {
       icon: FaServer,
       title: "Backend Development",
       description:
-        "Robust server-side solutions that power your applications with secure, scalable, and efficient code.",
-      features: ["API Development", "Database Design", "Authentication", "Cloud Integration"],
+        "Efficient and secure backend solutions using Node.js and ASP.NET Core with clean architecture.",
+      features: [
+        "RESTful APIs",
+        "Database Design (MongoDB, SQL Server)",
+        "Authentication & Authorization",
+        "CRUD Operations",
+      ],
     },
     {
       icon: FaMobileAlt,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that provide seamless experiences across devices.",
-      features: ["iOS & Android", "React Native", "Performance Optimization", "App Store Submission"],
+      title: "Mobile-Friendly Web Apps",
+      description:
+        "Responsive web apps that work seamlessly across phones, tablets, and desktops.",
+      features: [
+        "Mobile Optimization",
+        "Cross-Browser Compatibility",
+        "Touch-Friendly UI",
+        "Progressive Enhancement",
+      ],
     },
     {
       icon: FaRocket,
       title: "Performance Optimization",
       description:
-        "Speed up your existing applications by identifying and resolving bottlenecks and implementing best practices.",
-      features: ["Load Time Reduction", "Caching Strategies", "Code Splitting", "Resource Optimization"],
+        "Speed and optimize applications using best practices to improve user experience and load times.",
+      features: [
+        "Code Splitting",
+        "Lazy Loading",
+        "Database Query Optimization",
+      ],
     },
     {
       icon: FaHeadset,
       title: "Consultation & Support",
       description:
-        "Expert advice on technology choices, architecture decisions, and ongoing support for your projects.",
-      features: ["Technical Consulting", "Code Reviews", "Maintenance", "Training"],
+        "Advice, troubleshooting, and support for web projects including architecture, design, and code reviews.",
+      features: [
+        "Tech Stack Guidance",
+        "Debugging Help",
+        "Ongoing Maintenance",
+      ],
     },
-  ]
+  ];
+  
 
-  const containerVariants = {
+  const containerVariants =  {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   }
+  
 
   return (
     <section id="freelance" className="py-20 bg-black relative overflow-hidden" ref={ref}>

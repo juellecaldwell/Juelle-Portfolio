@@ -77,14 +77,23 @@ const Projects = () => {
       live: "https://juelles-portfolio.vercel.app/",
     },
     {
-      title: "(In Development 5/4/2025) Service Booking Platform",
+      title: "(In Development 5/4/2025) Service Booking Api",
       description: "In Development",
       image: InDevelopment,
-      tags: ["Asp", ".Net", "More+"],
-      category: "fullstack",
+      tags: ["Asp .Net Web APi", "More+"],
+      category: "backend",
       github: "#",
       live: "#",
     },
+    {
+      title: "(In Development 5/4/2025) Service Booking Frontend",
+      description: "In Development",
+      image: InDevelopment,
+      tags: ["Asp .Net Core MVC", "More+"],
+      category: "frontend",
+      github: "#",
+      live: "#",
+    }
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)

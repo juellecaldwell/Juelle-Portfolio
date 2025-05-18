@@ -12,6 +12,8 @@ import TrophyTracker from "../Images/TrophyTracker.png"
 import InvenTrack from "../Images/InvenTrack.png"
 import InDevelopment from "../Images/InDevelopment.jpg"
 import v1 from "../Images/Portfoliov1.png" 
+import sportsBar from "../Images/SportsBar.png" 
+
 
 
 
@@ -75,6 +77,15 @@ const Projects = () => {
       category: "frontend",
       github: "#",
       live: "https://juelles-portfolio.vercel.app/",
+    },
+    {
+      title: "Next Up Sports bar & Grill",
+      description: "This is an Website be and an buddy made for an Local Sports Bar in St. louis",
+      image: sportsBar,
+      tags: ["Css", "html", "Node js", "Express js", "Clover Payment"],
+      category: "fullstack",
+      github: "#",
+      live: "https://nextupbarandgrill-frontend.onrender.com/",
     },
     {
       title: "(In Development 5/4/2025) Service Booking Api",
